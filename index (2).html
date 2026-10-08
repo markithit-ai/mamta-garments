@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mamta Garments | Men's Wear & Textiles</title>
+<meta name="description" content="Mamta Garments — men's wear, everyday essentials and textiles. We Don't Just Sell Fabric... We Sell Vibes.">
+<meta name="theme-color" content="#e6332a">
+<meta property="og:title" content="Mamta Garments | We Sell Vibes">
+<meta property="og:description" content="Men's wear, textiles and everyday style at Mamta Garments.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap');
+:root{--red:#e6332a;--deep:#b91f1a;--black:#101010;--white:#fff;--soft:#f5f5f3;--muted:#777;--line:#deded9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--white);color:var(--black);font-family:Inter,Arial,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}
+.nav{position:fixed;z-index:50;top:14px;left:50%;transform:translateX(-50%);width:min(1180px,calc(100% - 28px));background:rgba(255,255,255,.88);backdrop-filter:blur(16px);border:1px solid rgba(0,0,0,.08);border-radius:18px;padding:12px 15px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 10px 35px rgba(0,0,0,.08)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800}.logoImage{width:42px;height:42px;object-fit:contain;border-radius:10px}.logoMark{width:38px;height:38px;border-radius:12px;background:var(--red);color:#fff;display:grid;place-items:center;font-family:'Bebas Neue';font-size:22px}.logo span:last-child{font-size:14px;letter-spacing:-.3px}
+.navlinks{display:flex;gap:25px;font-size:13px;font-weight:600}.navlinks a{opacity:.72;transition:.25s}.navlinks a:hover{opacity:1;color:var(--red)}
+.navbtn{background:var(--red);color:#fff;padding:11px 16px;border-radius:12px;font-size:12px;font-weight:800;border:0;cursor:pointer}
+.menu{display:none;background:none;border:0;font-size:23px}
+.hero{min-height:850px;padding:150px 6vw 80px;display:grid;grid-template-columns:1.02fr .98fr;gap:45px;align-items:center;background:linear-gradient(135deg,#fff 0%,#fff 57%,#f7f2ef 57%,#f7f2ef 100%);position:relative}
+.hero:before{content:"";position:absolute;width:430px;height:430px;background:var(--red);right:-160px;top:160px;border-radius:50%;opacity:.07}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:#111;color:#fff;border-radius:999px;padding:8px 12px;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-bottom:20px}
+.dot{width:7px;height:7px;background:var(--red);border-radius:50%}
+h1{font-family:'Bebas Neue',Impact,sans-serif;font-size:clamp(74px,10vw,150px);line-height:.82;letter-spacing:-2px;margin:0 0 26px;text-transform:uppercase}
+h1 em{font-style:normal;color:var(--red);display:block}
+.heroText{max-width:620px;font-size:17px;line-height:1.7;color:#555}.heroActions{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 20px;border-radius:13px;font-size:13px;font-weight:800;border:1px solid #111;transition:.25s;cursor:pointer}.btn.red{background:var(--red);color:#fff;border-color:var(--red)}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 25px rgba(0,0,0,.13)}
+.heroVisual{position:relative;min-height:580px}.photo{position:absolute;inset:20px 30px 20px 20px;border-radius:28px;overflow:hidden;background:#ddd;box-shadow:25px 25px 0 var(--red);transform:rotate(2deg);transition:transform .5s}.photo:hover{transform:rotate(0) scale(1.015)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}.tag{position:absolute;z-index:2;background:#fff;border-radius:14px;padding:13px 15px;box-shadow:0 15px 35px rgba(0,0,0,.15);font-size:11px;font-weight:800}.tag.one{top:18px;left:0}.tag.two{right:0;bottom:70px;background:#111;color:#fff}.tag.three{left:10px;bottom:8px;color:var(--red)}
+.marquee{background:var(--red);color:#fff;overflow:hidden;white-space:nowrap;border-block:1px solid #a91c17}.track{display:inline-block;animation:move 22s linear infinite;padding:16px 0;font-family:'Bebas Neue';font-size:24px;letter-spacing:2px}.track span{margin:0 20px}@keyframes move{to{transform:translateX(-50%)}}
+.section{padding:110px 6vw}.dark{background:#111;color:#fff}.sectionHead{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:45px}.kicker{color:var(--red);font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.section h2{font-family:'Bebas Neue';font-size:clamp(54px,7vw,100px);line-height:.9;margin:8px 0 0}.sectionIntro{max-width:420px;color:#777;line-height:1.7;font-size:14px}.dark .sectionIntro{color:#aaa}
+.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{height:410px;position:relative;overflow:hidden;border-radius:22px;background:#222}.card:nth-child(2),.card:nth-child(5){transform:translateY(35px)}.card img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.card:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(0,0,0,.78));}.card:hover img{transform:scale(1.08)}.cardContent{position:absolute;z-index:2;bottom:20px;left:22px;right:22px;color:#fff;display:flex;justify-content:space-between;align-items:end}.cardTitle{font-family:'Bebas Neue';font-size:46px}.arrow{width:43px;height:43px;border-radius:50%;background:var(--red);display:grid;place-items:center;font-size:20px}
+.stats{display:grid;grid-template-columns:1.1fr repeat(3,1fr);gap:1px;background:#333;margin-top:40px}.stat{background:#111;padding:30px}.bigStat{font-family:'Bebas Neue';font-size:120px;color:var(--red);line-height:.8}.stat strong{display:block;font-size:13px;letter-spacing:1px;margin-top:16px}.stat p{color:#999;font-size:12px;line-height:1.5}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.storyImg{height:620px;border-radius:25px;overflow:hidden;background:#ddd}.storyImg img{width:100%;height:100%;object-fit:cover}.storyCopy p{color:#666;line-height:1.85;font-size:15px}.pillrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px}.pill{border:1px solid #ddd;border-radius:999px;padding:9px 12px;font-size:11px;font-weight:700}
+.founder{display:grid;grid-template-columns:.7fr 1.3fr;gap:70px;align-items:center}.founderImg{height:540px;border-radius:26px;overflow:hidden;background:#222;position:relative}.founderImg img{width:100%;height:100%;object-fit:cover}.founderImg:after{content:"FOUNDING MEMBER";position:absolute;left:18px;bottom:18px;background:var(--red);color:#fff;padding:10px 13px;border-radius:8px;font-size:10px;font-weight:800;letter-spacing:1px}.quote{font-family:'Bebas Neue';font-size:clamp(35px,4vw,60px);line-height:1;margin:20px 0}.founderStats{display:flex;gap:35px;margin:30px 0}.founderStats b{font-family:'Bebas Neue';font-size:38px}.founderStats small{display:block;color:#999;font-size:10px;font-weight:700;letter-spacing:1px}
+.reviews{background:var(--soft)}.reviewGrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:15px}.rating{background:#111;color:#fff;border-radius:24px;padding:35px}.ratingNum{font-family:'Bebas Neue';font-size:100px;line-height:.75;color:var(--red)}.stars{color:#ffb400;font-size:22px;letter-spacing:2px;margin:20px 0}.review{background:#fff;border:1px solid #e7e7e4;border-radius:24px;padding:28px;min-height:230px}.review .stars{font-size:15px;margin:0 0 20px}.review h3{font-size:16px;margin:0 0 10px}.review p{font-size:13px;line-height:1.7;color:#666}
+.social{display:grid;grid-template-columns:1fr 1fr;gap:15px}.socialCard{border-radius:25px;padding:45px;min-height:330px;display:flex;flex-direction:column;justify-content:space-between}.ig{background:#f2eee9}.wa{background:#111;color:#fff}.socialCard h3{font-family:'Bebas Neue';font-size:62px;line-height:.9;margin:0}.socialCard p{color:#777;line-height:1.6;font-size:13px}.wa p{color:#aaa}
+.location{display:grid;grid-template-columns:.9fr 1.1fr;gap:15px}.locationCopy{background:var(--red);color:#fff;border-radius:25px;padding:45px;display:flex;flex-direction:column;justify-content:space-between}.locationCopy h2{font-family:'Bebas Neue';font-size:80px;line-height:.85;margin:0}.address{font-size:15px;line-height:1.8;opacity:.9}.map{border-radius:25px;overflow:hidden;min-height:430px;background:#ddd}.map iframe{width:100%;height:100%;min-height:430px;border:0}
+.final{padding:120px 6vw;background:#111;color:#fff;text-align:center;position:relative;overflow:hidden}.final:before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:var(--red);opacity:.15;left:50%;top:50%;transform:translate(-50%,-50%)}.final>*{position:relative}.final h2{font-family:'Bebas Neue';font-size:clamp(70px,12vw,170px);line-height:.78;margin:0 0 35px}.footer{background:#111;color:#fff;border-top:1px solid #333;padding:30px 6vw;display:flex;justify-content:space-between;gap:20px;font-size:11px;color:#aaa}.float.whatsapp{background:#25D366}.float{position:fixed;right:18px;bottom:18px;z-index:40;width:55px;height:55px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-size:21px;box-shadow:0 12px 30px rgba(0,0,0,.25);animation:pulse 2.5s infinite}@keyframes pulse{50%{box-shadow:0 12px 30px rgba(230,51,42,.15),0 0 0 10px rgba(230,51,42,.08)}}
+.reveal{opacity:0;transform:translateY(35px);transition:opacity .7s,transform .7s}.reveal.show{opacity:1;transform:none}
+@media(max-width:850px){.navlinks,.nav>.navbtn{display:none}.menu{display:block}.hero{grid-template-columns:1fr;padding-top:125px;min-height:auto}.heroVisual{min-height:470px}.photo{inset:15px 15px 15px 0}.categories{grid-template-columns:1fr 1fr}.card{height:330px}.card:nth-child(2),.card:nth-child(5){transform:none}.stats{grid-template-columns:1fr 1fr}.bigStat{font-size:90px}.story,.founder,.location{grid-template-columns:1fr;gap:35px}.storyImg,.founderImg{height:450px}.reviewGrid,.social{grid-template-columns:1fr}.sectionHead{display:block}.sectionIntro{margin-top:20px}.locationCopy h2{font-size:70px}}
+@media(max-width:520px){.hero{padding-left:20px;padding-right:20px}.section{padding:75px 20px}h1{font-size:76px}.heroVisual{min-height:390px}.categories{grid-template-columns:1fr}.card{height:390px}.stats{grid-template-columns:1fr 1fr}.stat{padding:20px}.bigStat{font-size:75px}.founderStats{gap:20px}.footer{flex-direction:column}.socialCard{padding:30px}.socialCard h3{font-size:52px}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#home"><img class="logoImage" src="logo.png" alt="Mamta Garments logo"><span>MAMTA GARMENTS</span></a>
+  <nav class="navlinks">
+    <a href="#collections">Collections</a><a href="#story">Our Story</a><a href="#raunak">Raunak</a><a href="#reviews">Reviews</a><a href="#location">Visit Store</a>
+  </nav>
+  <a class="navbtn" href="https://maps.app.goo.gl/4qfGpnfPuTNM85xa6" target="_blank">GET DIRECTIONS</a>
+  <button class="menu" aria-label="Menu">☰</button>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="reveal">
+    <div class="eyebrow"><span class="dot"></span> 10+ YEARS OF STYLE</div>
+    <h1>WE DON'T JUST<br>SELL FABRIC.<em>WE SELL VIBES.</em></h1>
+    <p class="heroText">Men's wear, everyday essentials and textiles — bringing quality, variety and local style under one roof.</p>
+    <div class="heroActions"><a class="btn red" href="#collections">EXPLORE COLLECTION ↓</a><a class="btn" href="https://maps.app.goo.gl/4qfGpnfPuTNM85xa6" target="_blank">VISIT OUR STORE ↗</a></div>
+  </div>
+  <div class="heroVisual reveal">
+    <div class="photo"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=85" alt="Men's fashion"></div>
+    <div class="tag one">MEN'S WEAR</div><div class="tag two">CUTTACK • ODISHA</div><div class="tag three">READY. SET. STYLE.</div>
+  </div>
+</section>
+
+<div class="marquee"><div class="track">MAMTA GARMENTS <span>•</span> JEANS <span>•</span> SHIRTS <span>•</span> T-SHIRTS <span>•</span> HOODIES <span>•</span> TRACKPANTS <span>•</span> MEN'S WEAR <span>•</span> 10+ YEARS <span>•</span> MAMTA GARMENTS <span>•</span> JEANS <span>•</span> SHIRTS <span>•</span> T-SHIRTS <span>•</span> HOODIES <span>•</span> TRACKPANTS <span>•</span></div></div>
+
+<section class="section" id="collections">
+  <div class="sectionHead reveal"><div><div class="kicker">THE LINE-UP</div><h2>WHAT'S YOUR VIBE?</h2></div><p class="sectionIntro">From everyday essentials to statement-ready fits, explore the categories that make Mamta Garments a local style destination.</p></div>
+  <div class="categories">
+    <a class="card reveal" href="#location"><img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=900&q=85" alt="Jeans"><div class="cardContent"><span class="cardTitle">JEANS</span><span class="arrow">↗</span></div></a>
+    <a class="card reveal" href="#location"><img src="https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=900&q=85" alt="Shirts"><div class="cardContent"><span class="cardTitle">SHIRTS</span><span class="arrow">↗</span></div></a>
+    <a class="card reveal" href="#location"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85" alt="T-shirts"><div class="cardContent"><span class="cardTitle">T-SHIRTS</span><span class="arrow">↗</span></div></a>
+    <a class="card reveal" href="#location"><img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=85" alt="Hoodies"><div class="cardContent"><span class="cardTitle">HOODIES</span><span class="arrow">↗</span></div></a>
+    <a class="card reveal" href="#location"><img src="https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=900&q=85" alt="Trackpants"><div class="cardContent"><span class="cardTitle">TRACKPANTS</span><span class="arrow">↗</span></div></a>
+    <a class="card reveal" href="#location"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=85" alt="Mens fashion"><div class="cardContent"><span class="cardTitle">MEN'S WEAR</span><span class="arrow">↗</span></div></a>
+  </div>
+</section>
+
+<section class="section dark" id="story">
+  <div class="sectionHead reveal"><div><div class="kicker">THE JOURNEY</div><h2>ONE LOCAL NAME.</h2></div><p class="sectionIntro">A decade of style, everyday shopping and trusted local service.</p></div>
+  <div class="stats reveal">
+    <div class="stat"><div class="bigStat" id="counter">0+</div><strong>YEARS OF STYLE</strong><p>Mamta Garments' Instagram highlights 10 years of trusted style experience.</p></div>
+    <div class="stat"><strong>QUALITY</strong><p>A wide collection of clothes and designs, according to customer feedback.</p></div>
+    <div class="stat"><strong>VALUE</strong><p>Customers mention reasonable and affordable pricing.</p></div>
+    <div class="stat"><strong>SERVICE</strong><p>Friendly staff and positive after-sales service are recurring review themes.</p></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="story">
+    <div class="storyImg reveal"><img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=1200&q=85" alt="Fashion store"></div>
+    <div class="storyCopy reveal"><div class="kicker">THE STORE EXPERIENCE</div><h2>COME IN.<br>FIND YOUR STYLE.</h2><p>From everyday essentials to your next favourite fit, discover men's clothing and textiles in a relaxed local shopping experience.</p><div class="pillrow"><span class="pill">MEN'S WEAR</span><span class="pill">TEXTILES</span><span class="pill">READY TO WEAR</span><span class="pill">LOCAL FAVOURITE</span></div><div class="heroActions"><a class="btn red" href="https://maps.app.goo.gl/4qfGpnfPuTNM85xa6" target="_blank">GET DIRECTIONS ↗</a></div></div>
+  </div>
+</section>
+
+<section class="section dark" id="raunak">
+  <div class="founder">
+    <div class="founderImg reveal"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=85" alt="Portrait placeholder for Raunak Singh"></div>
+    <div class="reveal"><div class="kicker">THE PERSON BEHIND THE JOURNEY</div><h2>RAUNAK<br>SINGH.</h2><div class="quote">"Just a face. A thousand hands behind me."</div><p style="color:#aaa;line-height:1.8;font-size:14px">Founding Member · Digital Creator · Humanitarian</p><p style="color:#aaa;line-height:1.8;font-size:14px">Raunak Singh's supplied Instagram profile describes him as a digital creator, founder of SikhAid, TEDx speaker and “30 Under 30 | Oxygen Man of Odisha”.</p><div class="founderStats"><div><b>949K</b><small>FOLLOWERS*</small></div><div><b>4+</b><small>PUBLIC PROFILE BADGES</small></div></div><p style="font-size:10px;color:#666">*Follower count shown in the supplied Instagram screenshot and may change over time.</p><a class="btn red" href="https://www.instagram.com/raunaksingh_sa/" target="_blank">FOLLOW RAUNAK ↗</a></div>
+  </div>
+</section>
+
+<section class="section reviews" id="reviews">
+  <div class="sectionHead reveal"><div><div class="kicker">SOCIAL PROOF</div><h2>PEOPLE TALK.</h2></div><p class="sectionIntro">Customer feedback highlights collection, value, friendly staff and after-sales service.</p></div>
+  <div class="reviewGrid">
+    <div class="rating reveal"><div class="ratingNum">5.0</div><div class="stars">★★★★★</div><strong>60+ GOOGLE REVIEWS</strong><p>Rating and review count based on the supplied Google listing screenshot.</p><a class="btn red" href="https://maps.app.goo.gl/4qfGpnfPuTNM85xa6" target="_blank">READ ON GOOGLE ↗</a></div>
+    <div class="review reveal"><div class="stars">★★★★★</div><h3>Wide & Quality Collection</h3><p>Customers describe the store as having a superb and wide collection of quality clothes and designs.</p></div>
+    <div class="review reveal"><div class="stars">★★★★★</div><h3>Friendly Service</h3><p>Review summaries mention friendly, helpful staff and positive after-sales service.</p></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="social">
+    <div class="socialCard ig reveal"><div><div class="kicker">INSTAGRAM</div><h3>FOLLOW<br>THE VIBE.</h3><p>Fresh fits, store updates and fashion inspiration from Mamta Garments.</p></div><a class="btn" href="https://www.instagram.com/mamtaagarments/" target="_blank">@mamtaagarments ↗</a></div>
+    <div class="socialCard wa reveal"><div><div class="kicker">WHATSAPP CHANNEL</div><h3>STAY IN<br>THE LOOP.</h3><p>Get new arrivals, offers and store updates on the WhatsApp channel.</p></div><a class="btn red" href="https://whatsapp.com/channel/0029VbBQXxl2kNFotrRpRt02" target="_blank">JOIN CHANNEL ↗</a></div>
+  </div>
+</section>
+
+<section class="section" id="location">
+  <div class="location">
+    <div class="locationCopy reveal"><div><div style="font-size:11px;font-weight:800;letter-spacing:2px">FIND US</div><h2>COME<br>THROUGH.</h2></div><div><div class="address"><strong>MAMTA GARMENTS</strong><br>Haripur Road<br>Cuttack, Odisha 753001</div><br><a class="btn" style="background:#fff;border-color:#fff" href="https://maps.app.goo.gl/4qfGpnfPuTNM85xa6" target="_blank">OPEN GOOGLE MAPS ↗</a></div></div>
+    <div class="map reveal"><iframe loading="lazy" src="https://www.google.com/maps?q=Mamta%20Garments%2C%20Haripur%20Road%2C%20Cuttack%2C%20Odisha&output=embed" title="Mamta Garments location"></iframe></div>
+  </div>
+</section>
+
+<section class="final"><h2>YOUR NEXT<br><span style="color:var(--red)">FIT IS WAITING.</span></h2><a class="btn red" href="https://maps.app.goo.gl/4qfGpnfPuTNM85xa6" target="_blank">VISIT MAMTA GARMENTS ↗</a></section>
+</main>
+
+<footer class="footer"><span>© 2026 Mamta Garments. All rights reserved.</span><span>Men's Wear & Textiles · Cuttack, Odisha</span><span><a href="https://www.instagram.com/mamtaagarments/" target="_blank">Instagram</a> · <a href="https://whatsapp.com/channel/0029VbBQXxl2kNFotrRpRt02" target="_blank">WhatsApp</a></span></footer>
+<a class="float whatsapp" href="https://whatsapp.com/channel/0029VbBQXxl2kNFotrRpRt02" target="_blank" aria-label="Join WhatsApp Channel">◔</a>
+
+<script>
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+let done=false;
+const counter=document.getElementById('counter');
+const co=new IntersectionObserver(es=>{if(es[0].isIntersecting&&!done){done=true;let n=0;const t=setInterval(()=>{n++;counter.textContent=n+'+';if(n>=10)clearInterval(t)},90)}},{threshold:.5});
+co.observe(counter);
+document.querySelector('.menu').addEventListener('click',()=>{document.querySelector('.navlinks').style.display=document.querySelector('.navlinks').style.display==='flex'?'none':'flex';document.querySelector('.navlinks').style.position='absolute';document.querySelector('.navlinks').style.top='65px';document.querySelector('.navlinks').style.left='10px';document.querySelector('.navlinks').style.right='10px';document.querySelector('.navlinks').style.background='#fff';document.querySelector('.navlinks').style.padding='18px';document.querySelector('.navlinks').style.borderRadius='14px';document.querySelector('.navlinks').style.flexDirection='column';});
+</script>
+</body>
+</html>
